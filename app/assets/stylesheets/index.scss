@@ -1,0 +1,37 @@
+.tasks {
+  padding-left: 0;
+  font-size: 24px;
+  list-style: none;
+  font-family: monospace;
+  li {
+    // display: inline;
+    background-color: #3498db;
+    color: white;
+    border: 1px solid #2980b9;
+    padding: 4px 12px;
+    margin: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.task {
+  background-color: #fffee2;
+  padding: 20px;
+  font-size: 18px;
+  list-style: none;
+  font-family: monospace;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom:8px;
+}
+
+.details {
+  background-color: #97dbf4;
+  padding: 4px 20px 4px 4px;
+  margin: 0px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: right;
+}

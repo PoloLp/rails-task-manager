@@ -1,0 +1,11 @@
+<h1>Task Management / Bouyaaah</h1>
+
+
+<ul class="tasks">
+  <% @tasks.each do |task| %>
+    <li>
+      <%= check_box_tag(task.title, value = "1", checked = task.completed) %>
+        <%= link_to "#{task.id} | #{task.title}", task_path(task) %>
+       <% end %>
+    </li>
+</ul>

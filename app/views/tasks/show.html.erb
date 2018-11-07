@@ -1,0 +1,23 @@
+<h1>Dat' Task</h1>
+
+<div class="container">
+  <div class="task">
+    <h2><%= @task.title %></h2>
+  </div>
+  <div class="details">
+    <h3><%= @task.details %></h3>
+  </div>
+  <div>
+      <% if @task.completed %>
+        <% @status = "This task is completed" %>
+      <% else %>
+        <% @status = "This task is not completed yet" %>
+      <% end %>
+      <div class="completed">
+        <%=  @status  %>
+        <%= check_box_tag("", value = "1", checked = @task.completed) %>
+      </div>
+    <h4><%=   %><h4>
+  </div>
+  <%= link_to "back to list", tasks_path %>
+</div>
